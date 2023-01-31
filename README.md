@@ -1,10 +1,11 @@
-<!-- Assumptions.
+** Assumptions. **
  Docker is installed in local/Linux. This is more geared to mac. Windows might be little different. 
- python > 3.8 and pip are installed locally.
- Do not run from OneDrive - Southwest Airlines or do volume mapping on docker.
+ Python > 3.8 and pip are installed locally.
  If we are restarting docker zookeper/kafka container, delete the data directory. 
  if you have errors as "no space left" clean up all containers and images from docker. 
--->
+ This is running on mac. 
+
+
 1. Clone the existing repository.
 
 2. export DOCKER_DEFAULT_PLATFORM=linux/amd64
