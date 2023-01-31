@@ -23,7 +23,9 @@
 4. docker ps 
 
 CONTAINER ID   IMAGE                       COMMAND                  CREATED       STATUS       PORTS                                         NAMES
+
 4a0aa8322b13   confluentinc/cp-kafka       "/etc/confluent/dock…"   2 hours ago   Up 2 hours   9092/tcp, 0.0.0.0:9091->9091/tcp, 19091/tcp   broker1
+
 c7cccf79ac6c   confluentinc/cp-zookeeper   "/etc/confluent/dock…"   2 hours ago   Up 2 hours   2888/tcp, 0.0.0.0:2181->2181/tcp, 3888/tcp    zookeeper
 
 6. To run producer/consumer manually from the docker container, 
