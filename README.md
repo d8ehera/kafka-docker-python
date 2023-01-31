@@ -1,4 +1,6 @@
-** Assumptions. **
+# Kafka Docker Python
+
+## Assumptions. 
  Docker is installed in local/Linux. This is more geared to mac. Windows might be little different. 
  Python > 3.8 and pip are installed locally.
  If we are restarting docker zookeper/kafka container, delete the data directory. 
@@ -6,10 +8,14 @@
  This is running on mac. 
 
 
+## Instructions
+
 1. Clone the existing repository.
 
 2. export DOCKER_DEFAULT_PLATFORM=linux/amd64
+
 3. docker-compose up 
+
 4. docker ps 
 
 CONTAINER ID   IMAGE                       COMMAND                  CREATED       STATUS       PORTS                                         NAMES
@@ -19,7 +25,6 @@ c7cccf79ac6c   confluentinc/cp-zookeeper   "/etc/confluent/dock…"   2 hours ag
 6. To run producer/consumer manually from the docker container, 
 
 In one terminal - docker exec --interactive --tty broker1 kafka-console-producer --bootstrap-server broker1:9091  --topic quickstart
-
 Enter some text and enter, enter more text and enter. 
 
 7. To run the consumer, open another terminal. 
