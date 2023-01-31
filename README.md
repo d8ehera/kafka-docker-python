@@ -2,9 +2,13 @@
 
 ## Assumptions. 
  Docker is installed in local/Linux. This is more geared to mac. Windows might be little different. 
+
  Python > 3.8 and pip are installed locally.
+
  If we are restarting docker zookeper/kafka container, delete the data directory. 
+ 
  if you have errors as "no space left" clean up all containers and images from docker. 
+ 
  This is running on mac. 
 
 
