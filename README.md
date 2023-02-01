@@ -4,7 +4,11 @@
  Docker is installed in local/Linux. This is more geared to mac. Windows might be little different. 
 
  Python > 3.8 and pip are installed locally.
+ Install Pip3 MacOS 
+ To install pip3 in a MacOS environment that already has Python 3 installed, enter:
+ brew install pip3
 
+ 
  If we are restarting docker zookeper/kafka container, delete the data directory. 
  
  if you have errors as "no space left" clean up all containers and images from docker. 
@@ -41,3 +45,7 @@ You should be able to see all the messages from the other terminal.
 8. To run the producer/consumer as a python script, run pip3 install -r requirements.txt
 9. Run Producer as python3 ./producer.py --topic=quickstart --key=broker1
 10. To run as consumer, run as python3 ./consumer.py 
+11. To restart zookeper/kafka container, clean up data directory. 
+12. to clean up, docker-compose down. docker images; docker rmi <imageid>
+
+

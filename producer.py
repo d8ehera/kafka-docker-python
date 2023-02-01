@@ -73,6 +73,7 @@ args = parser.parse_args()
 if not args.string.isalpha():
     raise RuntimeError("Input string should only contain letter A-Z.")
 
+print(f'Send topic to {args.topic}')
 p = Producer({'bootstrap.servers': 'localhost:9091'})
 for letter in args.string.upper():
     send_letter(letter, p, args.topic, args.key)
